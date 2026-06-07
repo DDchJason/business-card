@@ -455,6 +455,10 @@
                         <div class="contact-label">網站</div>
                         <div class="contact-value"><a href="https://www.goodcomer.com" target="_blank">goodcomer.com</a></div>
                     </div>
+                    <div class="contact-item" onclick="copyToClipboard('@dadi999')">
+                        <div class="contact-label">LINE 官方帳號</div>
+                        <div class="contact-value">@dadi999</div>
+                    </div>
                 </div>
             </div>
 
@@ -463,10 +467,6 @@
                 <button class="btn btn-secondary" onclick="shareCard()">分享</button>
             </div>
 
-            <!-- 頁腳 -->
-            <div class="footer">
-                © 2024 GOODCOMER CO., LTD.
-            </div>
         </div>
 
         <!-- 英文版本 -->
@@ -529,6 +529,10 @@
                         <div class="contact-label">Website</div>
                         <div class="contact-value"><a href="https://www.goodcomer.com" target="_blank">goodcomer.com</a></div>
                     </div>
+                    <div class="contact-item" onclick="copyToClipboard('@dadi999')">
+                        <div class="contact-label">LINE Official Account</div>
+                        <div class="contact-value">@dadi999</div>
+                    </div>
                 </div>
             </div>
 
@@ -537,10 +541,6 @@
                 <button class="btn btn-secondary" onclick="shareCard()">Share</button>
             </div>
 
-            <!-- 頁腳 -->
-            <div class="footer">
-                © 2024 GOODCOMER CO., LTD.
-            </div>
         </div>
     </div>
 
@@ -578,45 +578,6 @@
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 1800);
-        }
-
-        function downloadVCard(lang) {
-            const vcard = lang === 'zh' ? generateVCardZH() : generateVCardEN();
-            const element = document.createElement('a');
-            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(vcard));
-            element.setAttribute('download', `Jasion-Lin-${lang}.vcf`);
-            element.style.display = 'none';
-            document.body.appendChild(element);
-            element.click();
-            document.body.removeChild(element);
-        }
-
-        function generateVCardZH() {
-            return `BEGIN:VCARD
-VERSION:3.0
-FN:林家豪
-ORG:大地工業股份有限公司
-TITLE:Product Marketer
-TEL;TYPE=WORK,VOICE:(03)490-1326
-EMAIL:jason@goodcomer.com
-URL:https://www.goodcomer.com
-ADR;TYPE=WORK:;;新北市蘆洲區重陽街14號;;;
-NOTE:大地工業股份有限公司\\n工廠: 桃園市楊梅區新富路999號\\n核心服務: 圖面評估、客製化開模、擠型製造
-END:VCARD`;
-        }
-
-        function generateVCardEN() {
-            return `BEGIN:VCARD
-VERSION:3.0
-FN:Jasion Lin
-ORG:GOODCOMER CO., LTD.
-TITLE:Product Marketer
-TEL;TYPE=WORK,VOICE:+886-3-490-1326
-EMAIL:jason@goodcomer.com
-URL:https://www.goodcomer.com
-ADR;TYPE=WORK:;;No.14 Chongyang Street, Luzhou District, New Taipei City;;;;Taiwan
-NOTE:GOODCOMER CO., LTD.\\nFactory: No.999 Xinfushan Road, Yangmei District, Taoyuan City, Taiwan\\nCore Services: Drawing Assessment, Custom Mold Opening, Extrusion Manufacturing
-END:VCARD`;
         }
 
         function shareCard() {

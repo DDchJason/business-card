@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────
+# 內部管理檔：只留在本機，不發布到公開網站
+# (保護同事個資 / 不外洩內部作業流程)
+# ─────────────────────────────────────────────
+employees.csv
+add-member.ps1
+add-member.sh
+TEMPLATE.html
+SOP.md
+SESSION_SUMMARY.md
+
+# ─────────────────────────────────────────────
+# Claude / 開發工具產生的檔案（含本機路徑，勿公開）
+# ─────────────────────────────────────────────
+.claude/
+.claude-skill-business-card.md
+.playwright-mcp/
+
+# 公開的只剩：index.html、team/*/index.html、logo.svg、logo.png、README.md

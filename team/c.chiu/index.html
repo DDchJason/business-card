@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【改：名字】 - 大地工業 | 【改：English Name】 - GOODCOMER</title>
+    <title>林家豪 - 大地工業 | Jasion Lin - GOODCOMER</title>
     <style>
         * {
             margin: 0;
@@ -54,6 +54,10 @@
             border-color: #2c5aa0;
         }
 
+        .lang-btn:hover {
+            border-color: #2c5aa0;
+        }
+
         .card {
             width: 100%;
             display: flex;
@@ -64,6 +68,7 @@
             display: none;
         }
 
+        /* 上方區域 - Logo 和品牌 */
         .header-area {
             background: linear-gradient(135deg, #2c5aa0 0%, #1f3f6b 100%);
             padding: 40px 24px 50px;
@@ -115,6 +120,7 @@
             letter-spacing: 0.3px;
         }
 
+        /* 主要內容區域 */
         .content-area {
             padding: 40px 24px;
             display: flex;
@@ -123,6 +129,7 @@
             flex: 1;
         }
 
+        /* 個人信息區 */
         .person-section {
             text-align: center;
         }
@@ -153,6 +160,7 @@
             letter-spacing: 0.3px;
         }
 
+        /* 服務區 */
         .service-section {
             text-align: center;
             padding: 24px;
@@ -187,6 +195,7 @@
             text-align: left;
         }
 
+        /* 公司介紹 */
         .company-intro {
             font-size: 12px;
             color: #666;
@@ -195,11 +204,13 @@
             letter-spacing: 0.2px;
         }
 
+        /* 主要產品 */
         .products-section {
             text-align: center;
             padding: 20px 0;
             border-top: 1px solid #eee;
             border-bottom: 1px solid #eee;
+            margin-bottom: 24px;
         }
 
         .products-title {
@@ -230,6 +241,7 @@
             letter-spacing: 0.2px;
         }
 
+        /* 聯絡區 */
         .contact-section {
             display: flex;
             flex-direction: column;
@@ -280,6 +292,7 @@
             text-decoration: none;
         }
 
+        /* 按鈕區 */
         .action-area {
             padding: 24px;
             display: flex;
@@ -318,6 +331,7 @@
             background: #f0f0f0;
         }
 
+        /* 頁腳 */
         .footer {
             padding: 20px 24px;
             text-align: center;
@@ -326,6 +340,7 @@
             border-top: 1px solid #eee;
         }
 
+        /* Toast */
         .toast {
             position: fixed;
             bottom: 24px;
@@ -357,6 +372,7 @@
             }
         }
 
+        /* 響應式 */
         @media (min-width: 768px) {
             .container {
                 max-width: 500px;
@@ -381,21 +397,25 @@
 
         <!-- 中文版本 -->
         <div id="card-zh" class="card">
+            <!-- 上方區域 -->
             <div class="header-area">
                 <div class="logo-container">
-                    <img src="../logo.svg" alt="GOODCOMER Logo" class="logo-mark">
+                    <img src="logo.svg" alt="GOODCOMER Logo" class="logo-mark">
                 </div>
                 <div class="brand-tagline">客製化需求</div>
                 <div class="company-name">大地工業股份有限公司</div>
             </div>
 
+            <!-- 主要內容 -->
             <div class="content-area">
+                <!-- 個人信息 -->
                 <div class="person-section">
-                    <div class="name">邱于娟<br>(Christina Chiu)</div>
-                    <div class="title"></div>
-                    <div class="title-desc">生產管理</div>
+                    <div class="name">林家豪<br>(Jason)</div>
+                    <div class="title">Product Marketer</div>
+                    <div class="title-desc">鋁合金擠型開發諮詢顧問</div>
                 </div>
 
+                <!-- 服務 -->
                 <div class="service-section">
                     <div class="service-title">核心服務</div>
                     <div class="service-items">
@@ -405,10 +425,12 @@
                     </div>
                 </div>
 
+                <!-- 公司介紹 -->
                 <div class="company-intro">
                     自1967年創立，擁有全台最大6000噸鋁擠型機<br>專精超大型精密鋁擠型、自動化、交通、航太等應用
                 </div>
 
+                <!-- 主要產品 -->
                 <div class="products-section">
                     <div class="products-title">主要產品</div>
                     <div class="products-items">
@@ -418,15 +440,16 @@
                     </div>
                 </div>
 
+                <!-- 聯絡方式 -->
                 <div class="contact-section">
                     <div class="contact-title">聯絡方式</div>
                     <div class="contact-item" onclick="copyToClipboard('(03)490-1326')">
                         <div class="contact-label">電話</div>
                         <div class="contact-value">(03)490-1326</div>
                     </div>
-                    <div class="contact-item" onclick="copyToClipboard('christinachiu@goodcomer.com')">
+                    <div class="contact-item" onclick="copyToClipboard('jason@goodcomer.com')">
                         <div class="contact-label">電子郵件</div>
-                        <div class="contact-value"><a href="mailto:christinachiu@goodcomer.com">christinachiu@goodcomer.com</a></div>
+                        <div class="contact-value"><a href="mailto:jason@goodcomer.com">jason@goodcomer.com</a></div>
                     </div>
                     <div class="contact-item" onclick="window.open('https://www.goodcomer.com', '_blank')">
                         <div class="contact-label">網站</div>
@@ -439,6 +462,7 @@
                 </div>
             </div>
 
+            <!-- 按鈕區 -->
             <div class="action-area">
                 <button class="btn btn-secondary" onclick="shareCard()">分享</button>
             </div>
@@ -447,21 +471,25 @@
 
         <!-- 英文版本 -->
         <div id="card-en" class="card hidden">
+            <!-- 上方區域 -->
             <div class="header-area">
                 <div class="logo-container">
-                    <img src="../logo.svg" alt="GOODCOMER Logo" class="logo-mark">
+                    <img src="logo.svg" alt="GOODCOMER Logo" class="logo-mark">
                 </div>
                 <div class="brand-tagline">Custom Solutions</div>
                 <div class="company-name">GOODCOMER CO., LTD.</div>
             </div>
 
+            <!-- 主要內容 -->
             <div class="content-area">
+                <!-- 個人信息 -->
                 <div class="person-section">
-                    <div class="name">Christina Chiu<br>(Christina)</div>
-                    <div class="title"></div>
-                    <div class="title-desc">Production Management</div>
+                    <div class="name">Jasion Lin<br>(Jason)</div>
+                    <div class="title">Product Marketer</div>
+                    <div class="title-desc">Aluminum Alloy Extrusion Development Consultant</div>
                 </div>
 
+                <!-- 服務 -->
                 <div class="service-section">
                     <div class="service-title">Core Services</div>
                     <div class="service-items">
@@ -471,10 +499,12 @@
                     </div>
                 </div>
 
+                <!-- 公司介紹 -->
                 <div class="company-intro">
                     Founded in 1967, equipped with Taiwan's largest 6000-ton aluminum extrusion machine<br>Specialized in ultra-large precision aluminum extrusions for automation, transportation, aerospace
                 </div>
 
+                <!-- Main Products -->
                 <div class="products-section">
                     <div class="products-title">Main Products</div>
                     <div class="products-items">
@@ -484,15 +514,16 @@
                     </div>
                 </div>
 
+                <!-- 聯絡方式 -->
                 <div class="contact-section">
                     <div class="contact-title">Contact Information</div>
                     <div class="contact-item" onclick="copyToClipboard('+886-3-490-1326')">
                         <div class="contact-label">Phone</div>
                         <div class="contact-value">+886-3-490-1326</div>
                     </div>
-                    <div class="contact-item" onclick="copyToClipboard('christinachiu@goodcomer.com')">
+                    <div class="contact-item" onclick="copyToClipboard('jason@goodcomer.com')">
                         <div class="contact-label">Email</div>
-                        <div class="contact-value"><a href="mailto:christinachiu@goodcomer.com">christinachiu@goodcomer.com</a></div>
+                        <div class="contact-value"><a href="mailto:jason@goodcomer.com">jason@goodcomer.com</a></div>
                     </div>
                     <div class="contact-item" onclick="window.open('https://www.goodcomer.com', '_blank')">
                         <div class="contact-label">Website</div>
@@ -505,6 +536,7 @@
                 </div>
             </div>
 
+            <!-- 按鈕區 -->
             <div class="action-area">
                 <button class="btn btn-secondary" onclick="shareCard()">Share</button>
             </div>
@@ -552,8 +584,8 @@
             const url = window.location.href;
             if (navigator.share) {
                 navigator.share({
-                    title: 'Business Card',
-                    text: '大地工業股份有限公司',
+                    title: 'Jasion Lin - GOODCOMER',
+                    text: '林家豪 - 大地工業股份有限公司',
                     url: url
                 });
             } else {
